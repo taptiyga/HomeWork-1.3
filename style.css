@@ -7,19 +7,21 @@ html,
 body {
     font-family: sans-serif;
     letter-spacing: 1px;
+    background-color: #1b1b1b;
+    line-height: 1.5;
+    color: #c9c9c9;
+}
+
+.container {
+    max-width: 1250px;
+    padding: 32px 15px;
+    margin: 0 auto;
 }
 
 h1 {
     text-align: center;
     font-size: 25px;
     margin-bottom: 32px;
-    padding-top: 32px;
-}
-
-.container {
-    max-width: 1250px;
-    padding: 15px;
-    margin: 0 auto;
 }
 
 ul {
@@ -28,4 +30,21 @@ ul {
 
 li {
     margin: 10px 0;
+    list-style: none;
+}
+
+p {
+    font-weight: bold;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px #333;
+}
+
+.func {
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px #333;
+    display: inline-block;
+    margin-bottom: 32px;
+
 }

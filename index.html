@@ -29,18 +29,19 @@
                 отрицательным).</li>
             <li>2) Запрет использования встроенных методов массивов или других упрощающих решений</li>
         </ul>
-        <div>
+        <div class="func">
             function Exponentiation(a, b) {</br>
-            if (typeof a === 'number' && typeof b === 'number' && b >= 0) {</br>
-            let sum = 1</br>
-            for (let index = 0; index < b; index++) {</br>
-                sum = sum * a</br>
-                }</br>
-                console.log(sum)</br>
-                } else {</br>
-                console.log(`error:оба параметра должны быть числами, второе значение не может быть
+            &nbsp&nbsp&nbspif (typeof a === 'number' && typeof b === 'number' && b >= 0) {</br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsplet sum = 1</br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbspfor (let index = 0; index < b; index++) {</br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspsum = sum * a</br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}</br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspconsole.log(sum)</br>
+                &nbsp&nbsp&nbsp} else {</br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspconsole.log(`error:оба параметра должны быть числами, второе значение не
+                может быть
                 отрицательным`)</br>
-                }</br>
+                &nbsp&nbsp&nbsp}</br>
                 }</br>
                 Exponentiation(3, 10)
         </div>
