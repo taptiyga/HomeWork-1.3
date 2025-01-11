@@ -1,31 +1,38 @@
 
-function Exponentiation(a, b) {
-    if (typeof a === 'number' && typeof b === 'number' && b >= 0) {
-        let sum = 1
-        for (let index = 0; index < b; index++) {
-            sum = sum * a
-        }
-        console.log(sum)
-    } else {
-        console.log(`error:оба параметра должны быть числами, второе значение не может быть
-                отрицательным`)
-    }
-}
+// function Exponentiation(a, b) {
+//     if (typeof a === 'number' && typeof b === 'number' && b >= 0) {
+//         let sum = 1
+//         for (let index = 0; index < b; index++) {
+//             sum = sum * a
+//         }
+//         console.log(sum)
+//     } else {
+//         console.log(`error:оба параметра должны быть числами, второе значение не может быть
+//                 отрицательным`)
+//     }
+// }
 
-Exponentiation(3, 10)
+// Exponentiation(3, 10)
 
 
 function ExponentiationSum(a, b) {
-    if (typeof a === 'number' && typeof b === 'number' && b >= 0) {
-        let sum = a
-        for (let index = 0; index < b; index++) {
-            sum += sum
+    if (b > 0 && typeof a === "number" && typeof b === "number") {
+        let result = a;
+        for (let i = 1; i < b; i++) {
+            let temp = 0;
+            for (let j = 0; j < result; j++) {
+                temp += a;
+            }
+            result = temp;
         }
-        return sum
+        console.log(result)
+    } else if (b === 0) {
+        console.log(1)
+    } else if (b < 0) {
+        console.error(`второе значение не может быть отрицательным`)
     } else {
-        console.log(`error:оба параметра должны быть числами, второе значение не может быть
-                отрицательным`)
+        console.error(`оба параметра должны быть числами`)
     }
 }
-let result = ExponentiationSum(4, 0)
-console.log(result)
+
+ExponentiationSum(3, 4)

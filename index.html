@@ -38,13 +38,35 @@
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}</br>
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbspconsole.log(sum)</br>
                 &nbsp&nbsp&nbsp} else {</br>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspconsole.log(`error:оба параметра должны быть числами, второе значение не
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspconsole.error(`оба параметра должны быть числами, второе значение не
                 может быть
                 отрицательным`)</br>
                 &nbsp&nbsp&nbsp}</br>
                 }</br>
                 Exponentiation(3, 10)
         </div>
+        <div class="func">
+            function ExponentiationSum(a, b) {</br>
+            &nbsp&nbsp&nbspif (b > 0 && typeof a === "number" && typeof b === "number") {</br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsplet result = a;</br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbspfor (let i = 1; i < b; i++) {</br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsplet temp=0;</br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspfor (let j=0; j < result; j++) {</br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsptemp +=a;</br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}</br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspresult=temp;</br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}</br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbspconsole.log(result)</br>
+                    &nbsp&nbsp&nbsp} else if (b===0) {</br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbspconsole.log(1) </br>
+                    &nbsp&nbsp&nbsp} else if (b < 0) { </br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbspconsole.error(`второе
+                        значение не может быть отрицательным`) </br>
+                        &nbsp&nbsp&nbsp} else { </br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbspconsole.error(`оба параметра должны быть числами`) </br>
+                        &nbsp&nbsp&nbsp} </br>
+                        }</br>
+                        ExponentiationSum(3, 4) </div>
     </div>
 </body>
 
